@@ -159,7 +159,7 @@ p.lead {
   font-family: "montserrat-regular", sans-serif;
   font-size: 2rem;
   line-height: 1.8;
-  color: #4f4f4f;
+  color: #ffffff;
   margin-bottom: 3.6rem;
 }
 @media only screen and (max-width: 768px) {
@@ -1260,10 +1260,10 @@ header .header-logo a {
   padding: 0;
   outline: 0;
   border: none;
-  width: 57px;
-  height: 27px;
-  background: url("../images/logo1.png") no-repeat center;
-  background-size: 60%;
+  width: 150px;
+  height: 50px;
+  background: url("../images/logo111.png") no-repeat center;
+  background-size: 100%;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1273,6 +1273,9 @@ header .header-logo a {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+.home-social-list .animate-intro .ico-mail{width:50%;height: 50%}
+
+
 
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
@@ -1297,10 +1300,12 @@ header .header-logo a {
   transition: all 0.3s ease-in-out;
 }
 #header-menu-trigger.opaque {
-  background-color: #000000;
+  /*background-color: #000000;*/
+  background-color:rgba(0, 0, 0, 0.5)
 }
 #header-menu-trigger.opaque .header-menu-text {
-  background-color: #000000;
+ /* background-color: #000000;*/
+    background-color:rgba(0, 0, 0, 0.5)
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
   color: #FFFFFF;
@@ -1489,9 +1494,9 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   header .header-logo a {
-    width: 51px;
-    height: 24px;
-    background-size: 51px 24px;
+    width: 100px;
+    height:50px;
+    background-size: 100%;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1500,6 +1505,18 @@ header .header-logo a {
   }
 }
 
+
+@media only screen and (max-width: 768px) {
+  #about .my-profile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about .lead  {font-size: 0.5rem;color:#ffffff
+    
+  }
+}
 
 /* ===================================================================
  *  10. home - (_layout.scss)
@@ -1788,25 +1805,26 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #about {
   position: relative;
-  padding: 4.2rem 0 12rem;
+  /*padding: 4.2rem 0 12rem;
   background-color: #FFFFFF;
   min-height: 696px;
-  text-align: center;
+ /* text-align: center;*/
 }
 #about .about-wrap {
   max-width: 850px;
 }
 #about span {
-  color: #07617d;
+  color: pink;
 }
 #about h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.8rem;
   line-height: 1.667;
-  color: #07617d;
+  color: palevioletred;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
+  text-align: center
 }
 #about h3::before {
   display: block;
@@ -1818,11 +1836,30 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
   line-height: 1.8;
-  color: #2e383f;
+  color: ffffff;
   margin-top: 6rem;
 }
+#about .about-profile-bg{float: left}
+#about .my-profile {float: right;
+                    position: relative;
+                    top:-370px;
+                    left:30px;
+                    z-index: 999;
+                   
+                   }
+#about .my-profile img{width: 100%;
+    border: 2px solid #f2f2f2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+       
+}
+
+#about .lead .p{margin-top:0;margin-block-end: 0}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1855,7 +1892,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     max-width: 600px;
   }
   #about .lead {
-    font-size: 3.1rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1956,6 +1993,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   display: inline-block;
   margin-bottom: 1.5rem;
 }
+
+/*#services .services-list .icon:hover {
+    background-color:black;
+    width:100%;height: 100%;
+    
+    position: relative;
+    z-index: 2
+}*/
+
+
+
 #services .services-list .icon i {
   font-size: 5.4rem;
   color: #f9a828;
@@ -2946,7 +2994,7 @@ footer h4.h05::after {
   line-height: 63px;
   text-align: center;
   background-color: #000000;
-  color: #888;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   -moz-transition: all 0.3s ease-in-out;
