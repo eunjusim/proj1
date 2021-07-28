@@ -2872,7 +2872,7 @@
   font-size: 22px;
   margin-top: -10px;
   padding: 8px 10px 9px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   z-index: 1080;
 }
@@ -3122,6 +3122,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
+  display: none;
   background-color: #0D0A0A;
   bottom: 0;
   position: absolute;
@@ -3167,6 +3168,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 10px 0;
   height: 100%;
   margin-bottom: -5px;
+  /*position:absolute!important;
+  bottom:0;left:0;width:100%;*/
 }
 
 .lg-outer .lg-thumb-item {
@@ -3590,11 +3593,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 100%;
   width: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
-  max-height: 100%;
+  /*max-width: 100%;
+  max-height: 100%;*/
 }
 
 .lg-outer .lg-inner {
@@ -3655,8 +3658,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-image {
   display: inline-block;
   vertical-align: middle;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  /*max-height: 100%;*/
   width: auto !important;
   height: auto !important;
 }

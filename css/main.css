@@ -130,6 +130,7 @@ h2, .h02 {
 h3, .h03 {
   font-size: 2rem;
   line-height: 1.5;
+  
 }
 
 h4, .h04 {
@@ -1965,8 +1966,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
-#services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+#services .section-intro h2 {
+  color: #ffffff;padding-bottom: 20px
 }
 #services .section-intro h1 {
   color: #FFFFFF;
@@ -1988,11 +1989,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #services .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
+  width:200px
 }
 #services .services-list .icon {
   display: inline-block;
   margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden
+
 }
+
+#services .services-list .icon img{display: block}
 
 /*#services .services-list .icon:hover {
     background-color:black;
@@ -2059,6 +2066,52 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 
 /* ===================================================================
+ *  13. 웹프로젝트 박스 - 
+ *
+ * ------------------------------------------------------------------- */
+
+.web_popup {display: block;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            top:50%;left:50%;
+            transform: translate(-50%,-50%) scale(0);
+            transition: transform 0.5s;
+            
+}
+ #services .services-list .icon:hover .web_popup{
+    transform: translate(-50%,-50%) scale(1.1 );
+ }
+.web_popup > div{position: absolute;
+           color:#FFFFFF;
+            font-weight: bold;
+            font-size: 2rem;
+            z-index: 9999;
+            top:50%;left:50%;
+            transform: translate(-50%,-50%) scale(0);
+            transition: transform 0.5s;
+}
+.web_popup p a{display:inline-block;border: 0px solid;
+            border-radius: 10px;background-color:#ffffff;
+            color:#000;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top:10px;
+            padding-bottom: 10px }
+
+#services .services-list .icon:hover .web_popup div{
+    transform: translate(-51%,-50%) scale(1 );
+ }
+.web_popup h5{color:#FFFFFF}
+.web_popup h6{color:#FFFFFF}
+
+.web_popup p a:hover{background-color:black;
+                     color:#ffffff
+}
+
+/* ===================================================================
  *  13. portfolio - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
@@ -2073,8 +2126,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 15rem 0 21rem;
   background: #111111;
 }
-#portfolio .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+#portfolio .section-intro h2 {
+ /* color: rgba(242, 242, 242, 0.5);*/
+ color:#ffffff;
 }
 #portfolio .section-intro h1 {
   color: #FFFFFF;
@@ -2140,13 +2194,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   z-index: 1;
 }
 .bricks-wrapper .item-wrap .overlay::after {
-  content: "...";
+  content: "+";
   font-family: georgia, serif;
-  font-size: 3rem;
+  font-size: 5rem;
   z-index: 1;
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 41px;
+  width: 41px;
   line-height: 30px;
   margin-left: -15px;
   margin-top: -15px;
@@ -2154,7 +2208,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   left: 50%;
   top: 50%;
   text-align: center;
-  color: #FFFFFF;
+  color: #333;
+  border: 1px solid;
+  border-radius: 50px;
+  background-color:#ffffff;
   opacity: 0;
   visibility: hidden;
   -moz-transition: all 0.3s ease-in-out;
@@ -2166,6 +2223,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
+
+
+
 .bricks-wrapper .item-wrap .item-text {
   position: absolute;
   top: 0;
