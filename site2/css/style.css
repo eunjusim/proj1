@@ -36,7 +36,8 @@
        font-size:0.8rem;margin-bottom:10px;
        margin-left:0px}
 
-
+#nav1 .depth1 > li > .point1 {color:red}
+.point2 {color:red;font-weight: bold}
 
 
 
