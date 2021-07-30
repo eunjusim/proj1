@@ -728,7 +728,7 @@ input[type="button"] {
   letter-spacing: .3rem;
   height: 5.4rem;
   line-height: 5.4rem;
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin: 0 .3rem 1.2rem 0;
   background: #A5A5A5;
   color: #222222;
@@ -803,8 +803,9 @@ button.large, .button.large {
 
 button.stroke, .button.stroke {
   background: transparent !important;
-  border: 3px solid #313131;
+  border: 2px solid #FFFFFF;
   line-height: 4.8rem;
+  border-radius: 10px
 }
 
 button.stroke.medium, .button.stroke.medium {
@@ -816,8 +817,9 @@ button.stroke.large, .button.stroke.large {
 }
 
 button.stroke:hover, .button.stroke:hover {
-  border: 3px solid #f9a828;
-  color: #f9a828;
+  border: 2px solid #ffffff;
+  /*color: #f9a828;*/
+  color:#ffffff;
 }
 
 button::-moz-focus-inner,
@@ -1308,12 +1310,17 @@ header .header-logo a {
 }
 #header-menu-trigger.opaque {
   /*background-color: #000000;*/
-  background-color:rgba(0, 0, 0, 0.5);
+ /* background-color:rgba(0, 0, 0, 0.5);*/
+ background-color:rgba(46, 127, 234, 0.4);
   color:#ffffff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px
 }
 #header-menu-trigger.opaque .header-menu-text {
  /* background-color: #000000;*/
-    background-color:rgba(0, 0, 0, 0.5)
+    background-color:rgba(46, 127, 234, 0.4);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
   color: #FFFFFF;
@@ -1581,7 +1588,8 @@ header .header-logo a {
 .home-content-tablecell h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 2.2rem;
-  color: white;
+  /*color: white;*/
+  color:rgba(46, 127, 234, 0.4);
   text-transform: uppercase;
   letter-spacing: .3rem;
   margin: 0 0 .9rem 0;
@@ -1601,14 +1609,16 @@ header .header-logo a {
   font-family: "montserrat-bold", serif;
   font-size: 5rem;
   line-height: 1.133;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
+  color:#29B9B0
 }
 .home-content-tablecell .more {
   margin: 4.8rem 0 0 0;
 }
 .home-content-tablecell .more .button {
-  border-color: #FFFFFF;
-  color: #FFFFFF;
+ /* border-color: #FFFFFF;*/
+ /* color: rgba(46, 127, 234, 0.5);*/
+ color:#ffffff;
 }
 
 /* home social-list */
@@ -1849,7 +1859,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin: 0 auto 2.4rem;
 }
 #about .lead {
-  font-family: "librebaskerville-bold", serif;
+ /* font-family: "librebaskerville-bold", serif;*/
+  font-family: "montserrat-bold"
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.8;
@@ -2091,7 +2102,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
             height: 100%;
             top:50%;left:50%;
             transform: translate(-50%,-50%) scale(0);
-            transition: transform 0.5s;
+            transition: transform 0.8s;
             
 }
  #services .services-list .icon:hover .web_popup{
@@ -2112,7 +2123,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
             padding-left: 10px;
             padding-right: 10px;
             padding-top:10px;
-            padding-bottom: 10px }
+            padding-bottom: 10px ;
+             font-family: "montserrat-bold"
+            }
 
 #services .services-list .icon:hover .web_popup div{
     transform: translate(-51%,-50%) scale(1 );
@@ -2120,7 +2133,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 .web_popup h5{color:#FFFFFF}
 .web_popup h6{color:#FFFFFF}
 
-.web_popup p a:hover{background-color:black;
+.web_popup p a:hover{/*background-color:black;*/
+                       background-color:#29B8AF;
                      color:#ffffff
 }
 
@@ -3072,7 +3086,7 @@ footer h4.h05::after {
   width: 60px;
   line-height: 63px;
   text-align: center;
-  background-color: #000000;
+  background-color:rgba(46, 127, 234, 0.4);
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -3081,17 +3095,18 @@ footer h4.h05::after {
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
 #go-top a i {
   font-size: 1.7rem;
   line-height: inherit;
 }
 #go-top a:visited {
-  background: #000000;
+  background: rgba(46, 127, 234, 0.4);
   color: #888;
 }
 #go-top a:hover, #go-top a:focus {
-  background: #000000;
+  background: rgba(41, 185, 176,0.4);
   color: #FFFFFF;
 }
 
